@@ -1,7 +1,7 @@
 module.exports = {
   testPathIgnorePatterns: ["/node_modules/", "/.next/"],
   setupFilesAfterEnv: [
-    "<rootDir>/src/tests/setupTests.ts"
+    "<rootDir>/src/tests/setupTests.ts",
   ],
   transform: {
     "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
@@ -17,5 +17,5 @@ module.exports = {
     "!src/**/_app.tsx",
     "!src/**/_document.tsx",
   ],
-  coverageReporters: ["lcov", "json"]
-};
+  coverageReporters: [ 'lcov', 'json' ]
+}
