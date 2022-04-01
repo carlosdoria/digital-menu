@@ -1,15 +1,24 @@
 import type { NextPage } from 'next'
-import { List } from '../components/List'
+import { ProductList } from '../components/ProductList'
 
 const Home: NextPage = () => {
-  const LIST = [
-    'a',
-    'b',
-    'c'
+  const PRODUCTS = [
+    {
+      name: 'a',
+      description: 'description a'
+    },
+    {
+      name: 'b',
+      description: 'description b'
+    },
+    {
+      name: 'c',
+      description: 'description 3'
+    },
   ]
 
   return (
-    <List items={LIST} />
+    <ProductList products={PRODUCTS} />
   )
 }
 
