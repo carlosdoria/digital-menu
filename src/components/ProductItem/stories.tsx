@@ -6,8 +6,8 @@ export default {
   title: 'ProductItem',
   component: ProductItem,
   argTypes: {
-    name: { control: 'string' },
-    description: { control: 'string' },
+    name: { type: 'string' },
+    description: { type: 'string' },
   },
   args: {
     name: 'Test name sua mae',
@@ -16,3 +16,8 @@ export default {
 } as ComponentMeta<typeof ProductItem>;
 
 export const Basic: ComponentStory<typeof ProductItem> = args => <ProductItem {...args} />
+
+Basic.args = {
+  name: 'Test name aaaaa mae',
+  description: 'Test description',
+}
