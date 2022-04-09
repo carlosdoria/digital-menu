@@ -11,7 +11,9 @@ describe('Product Item Component', () => {
     render(<ProductItem name={PRODUCT.name} description={PRODUCT.description} />)
 
 
-    expect(screen.getByText('Test name')).toBeInTheDocument()
+    expect(
+      screen.getByRole( 'heading', { name: /Test name/i })
+    ).toBeInTheDocument()
     expect(screen.getByText('Test description')).toBeInTheDocument()
 
   })
