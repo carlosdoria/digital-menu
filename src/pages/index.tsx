@@ -1,5 +1,5 @@
+import { Product } from 'components'
 import type { NextPage } from 'next'
-import { ProductList } from '../components/ProductList'
 
 const Home: NextPage = () => {
   const PRODUCTS = [
@@ -18,7 +18,14 @@ const Home: NextPage = () => {
   ]
 
   return (
-    <ProductList products={PRODUCTS} />
+    <>
+      <Product
+        description='pratoooo'
+        title='prasdfsdfsd asdasd asda asdasdads ads ads ads asdasda '
+        urlImg='https://source.unsplash.com/user/willianjusten/151x70'
+        value={10}
+      />
+    </>
   )
 }
 
