@@ -32,7 +32,7 @@ module.exports = function ( plop ) {
       },
       {
         type: 'append',
-        path: '../src/components/index.js',
+        path: '../src/components/index.ts',
         pattern: /(\/ ADD COMPONENT\s)/g,
         template: "export * from './{{pascalCase name}}'",
         }
