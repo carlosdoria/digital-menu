@@ -12,7 +12,7 @@ export default {
     description: {
       type: 'string'
     },
-    value: {
+    price: {
       type: 'number'
     },
     urlImg: {
@@ -26,6 +26,6 @@ export const Default: Story<ProductProps> = args => <Product {...args} />;
 Default.args = {
   title: 'Prato',
   description: 'Prato principal',
-  value: 30,
+  price: 30,
   urlImg: 'https://source.unsplash.com/user/willianjusten/151x70',
 }

@@ -20,10 +20,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Product
-        description='pratoooo'
-        title='prasdfsdfsd asdasd asda asdasdads ads ads ads asdasda '
+        title='Prato'
+        description='DEscrição do prato com varios detalhes mais mainsa asdasdanas dasdasda sda sdadasdas '
         urlImg='https://source.unsplash.com/user/willianjusten/151x70'
-        value={10}
+        price={10}
       />
     </>
   )

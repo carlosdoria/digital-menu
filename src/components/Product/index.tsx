@@ -1,17 +1,18 @@
+import { formattedCurrency } from 'utils/formattedCurrency';
 import * as S from './styles';
 
 export type ProductProps = {
   urlImg: string
   title: string
   description: string
-  value: number
+  price: number
 }
 
 export const Product = ({
   urlImg,
   title,
   description,
-  value,
+  price,
 }: ProductProps) => {
   return (
     <S.Wrapper>
@@ -19,8 +20,7 @@ export const Product = ({
         <img src={urlImg} alt={title} />
         <h1>{title}</h1>
         <h2>{description}</h2>
-        <p>{value}</p>
-
+        <p>{formattedCurrency(price)}</p>
     </S.Wrapper>
   );
 };
